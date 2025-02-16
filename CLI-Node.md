@@ -59,7 +59,7 @@ OR
 --pubKey <KEY>         # Solana public key (Address)
 ```
 
-Note: Replace your `ram` , `disk` & `pubkey` with your actual Information.Retrieve the public key from your Solana wallet (e.g., Phantom, Backpack) 
+Note: Put your `ram` , `disk` & `pubkey` with your actual Information.Retrieve the public key from your Solana wallet (e.g., Phantom, Backpack) & Replace in `<KEY>` by Solana Address
 
 
 # Open Another Window for WSL or VPS
