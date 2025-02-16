@@ -1,5 +1,7 @@
 # CLI Node Run Full Guide (PC and VPS for Both)
 
+### Offical Docs by Pipe Network - https://docs.pipe.network/devnet-2
+
 1️⃣ Dependencies for WINDOWS & LINUX & VPS
 ```
 sudo apt update
@@ -13,95 +15,97 @@ apt install screen -y
 
 2️⃣ Download Some Files
 ```
-curl https://download.hyper.space/api/install | bash
+curl -L -o pop "https://dl.pipecdn.app/v0.2.5/pop"
 ```
 ```
-source /root/.bashrc
-```
-
-For VPS Only
-```
-screen -S hyperspace
-```
-```
-source /root/.bashrc
-```
-
-3️⃣ Put Your Old Private Key
-```
-nano .pem
-```
-Then save - CTRL+X Then Enter Y Then Enter
-
-4️⃣ Start Node
-```
-aios-cli start
+chmod +x pop
 ```
 
 For VPS Only
 ```
-PRESS CTRL+A+D (to run ur node continuously)
+screen -S pipe
 ```
 
-## Open Another Window for WSL or VPS
-
-For VPS Only
+3️⃣ Make Directory (create folder to be used for download cache)
 ```
-screen -S cli-hyperspace
+mkdir download_cache
 ```
 
-### Check Your Preference Model
+4️⃣ Signup Your Account
 ```
-aios-cli models list
-```
-
-1️⃣ Download Tier Model 
-```
-aios-cli models add hf:TheBloke/phi-2-GGUF:phi-2.Q4_K_M.gguf
+./pop --signup-by-referral-route d93ec7a125f095ab
 ```
 
-2️⃣ Registered Your Tier
 ```
-aios-cli hive login
-```
-```
-aios-cli hive connect
+# Generate Your Referral
+./pop --gen-referral-route
 ```
 
-3️⃣ Choose Your Tier (currently ranging from best to worst as 1-5)
+5️⃣ Start Node
 ```
-aios-cli hive select-tier 5
-```
-
-4️⃣ To Check Your Current Multiplier and Points
-```
-aios-cli hive points
+./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY>
 ```
 
-5️⃣ Check Your Node Status
+OR
 ```
-aios-cli status
+./pop \
+
+--ram 8 \              # RAM in GB
+
+--max-disk 500 \       # Max disk usage in GB  
+
+--cache-dir /data \    # Cache location
+
+--pubKey <KEY>         # Solana public key (Address)
 ```
 
-## If Node Not Working Then Kill Node and Reconnect
-```
-aios-cli kill
-```
-Then Start Node
+Note: Replace your `ram` , `disk` & `pubkey` with your actual Information.Retrieve the public key from your Solana wallet (e.g., Phantom, Backpack) 
 
-## Import Your Private and Public Key
+
+# Open Another Window for WSL or VPS
+
+## Save the file
 ```
-aios-cli hive whoami
+nano ~/node_info.json
 ```
+
+## Monitor your Node Status & Points
+```
+./pop --status
+```
+```
+./pop --points
+```
+
+## Check Points & Status from Dashboard - https://dashboard.pipenetwork.com/node-lookup
+
+
+# Need to Free Your 8003 Port
+
+## Identify the Process Using Port 8003
+```
+sudo ss -tulpn | grep 8003
+```
+
+Example - ``` LISTEN  0  128  0.0.0.0:0380  0.0.0.0:*  users:(("nginx",pid=1234,fd=6)) ```
+
+## Terminate the Process by PID
+```
+sudo kill -9 1234
+```
+
+## Kill All Processes Using Port 8003
+```
+sudo fuser -k 8003/tcp
+```
+
 
 ## 🔶For Next Day Run This Command
 
 #1 Open WSL and Put this Command 
 ```
-source /root/.bashrc
+./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY>
 ```
-Directly Run Start Command
-```
-aios-cli start
-```
+
+Note: Replace your `ram` , `disk` & `pubkey` with your actual Information.Retrieve the public key from your Solana wallet (e.g., Phantom, Backpack)
 
