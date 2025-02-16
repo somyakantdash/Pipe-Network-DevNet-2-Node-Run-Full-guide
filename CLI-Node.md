@@ -80,26 +80,6 @@ nano ~/node_info.json
 ## Check Points & Status from Dashboard - https://dashboard.pipenetwork.com/node-lookup
 
 
-# Need to Free Your 8003 Port
-
-## Identify the Process Using Port 8003
-```
-sudo ss -tulpn | grep 8003
-```
-
-Example - ``` LISTEN  0  128  0.0.0.0:0380  0.0.0.0:*  users:(("nginx",pid=1234,fd=6)) ```
-
-## Terminate the Process by PID
-```
-sudo kill -9 1234
-```
-
-## Kill All Processes Using Port 8003
-```
-sudo fuser -k 8003/tcp
-```
-
-
 ## 🔶For Next Day Run This Command
 
 #1 Open WSL and Put this Command 
@@ -109,3 +89,24 @@ sudo fuser -k 8003/tcp
 
 Note: Replace your `ram` , `disk` & `pubkey` with your actual Information.Retrieve the public key from your Solana wallet (e.g., Phantom, Backpack)
 
+
+## Need to Free Your 8003 Port
+
+### Identify the Process Using Port 8003
+```
+sudo ss -tulpn | grep 8003
+```
+
+Example - ``` LISTEN  0  128  0.0.0.0:0380  0.0.0.0:*  users:(("nginx",pid=1234,fd=6)) ```
+
+### Terminate the Process by PID
+```
+sudo kill -9 1234
+```
+
+### Kill All Processes Using Port 8003
+```
+sudo fuser -k 8003/tcp
+```
+
+Reference Video How to Free 8003 or any port - https://youtu.be/4iP4GvLfCrU?t=229
