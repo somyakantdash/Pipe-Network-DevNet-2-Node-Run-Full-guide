@@ -9,11 +9,9 @@ Cache Node is a high-performance caching service that helps distribute and serve
 
 # Software Requirements for PC Users
 
-- 1. For Windows Install WSL - https://learn.microsoft.com/en-us/windows/wsl/install#install-wsl-command
-
-- 2. For Windows Install Ubuntu after Installing WSL - https://apps.microsoft.com/detail/9PDXGNCFSCZV?hl=en-us&gl=IN&ocid=pdpshare
-
-- 3. For macOS If you have Installed Homebrew (https://brew.sh/) to manage packages on OS X,
+1. For Windows Install WSL - https://learn.microsoft.com/en-us/windows/wsl/install#install-wsl-command
+2. For Windows Install Ubuntu after Installing WSL - https://apps.microsoft.com/detail/9PDXGNCFSCZV?hl=en-us&gl=IN&ocid=pdpshare
+3. For macOS If you have Installed Homebrew (https://brew.sh/) to manage packages on OS X,
 run this command to install Git.
 ```
 brew install git
