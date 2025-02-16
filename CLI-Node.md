@@ -61,6 +61,12 @@ OR
 
 Note: Put your `ram` , `disk` & `pubkey` with your actual Information.Retrieve the public key from your Solana wallet (e.g., Phantom, Backpack) & Replace in `<KEY>` by Solana Address
 
+![6165852026936868478](https://github.com/user-attachments/assets/6ceac486-a639-48ed-aa81-cccfbe02d6da)
+
+If Your Node showing this Above Error then Put Below Command (Must Put `ram` , `disk` & `pubkey` value)
+```
+sudo ./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY>
+```
 
 # Open Another Window for WSL or VPS
 
@@ -88,6 +94,13 @@ nano ~/node_info.json
 ```
 
 Note: Replace your `ram` , `disk` & `pubkey` with your actual Information.Retrieve the public key from your Solana wallet (e.g., Phantom, Backpack)
+
+![6165852026936868478](https://github.com/user-attachments/assets/6ceac486-a639-48ed-aa81-cccfbe02d6da)
+
+If Your Node showing this Above Error then Put Below Command (Must Put `ram` , `disk` & `pubkey` value)
+```
+sudo ./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY>
+```
 
 
 ## Need to Free Your 8003 Port
