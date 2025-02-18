@@ -90,17 +90,10 @@ nano ~/node_info.json
 
 #1 Open WSL and Put this Command 
 ```
-./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY>
+sudo ./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY>
 ```
 
 Note: Replace your `ram` , `disk` & `pubkey` with your actual Information.Retrieve the public key from your Solana wallet (e.g., Phantom, Backpack)
-
-![6165852026936868478](https://github.com/user-attachments/assets/6ceac486-a639-48ed-aa81-cccfbe02d6da)
-
-If Your Node showing this Above Error then Put Below Command (Must Put `ram` , `disk` & `pubkey` value)
-```
-sudo ./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY>
-```
 
 ## Upgrade Your Node in v0.2.6
 
