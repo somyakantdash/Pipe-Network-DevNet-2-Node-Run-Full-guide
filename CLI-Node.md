@@ -43,7 +43,7 @@ mkdir download_cache
 
 5️⃣ Start Node
 ```
-./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY>
+sudo ./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY>
 ```
 
 OR
@@ -102,6 +102,22 @@ If Your Node showing this Above Error then Put Below Command (Must Put `ram` , `
 sudo ./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY>
 ```
 
+## Upgrade Your Node in v0.2.6
+
+1️⃣ Upgrade (Download Latest Version)
+```
+curl -L -o pop "https://dl.pipecdn.app/v0.2.6/pop"
+```
+```
+chmod +x pop
+```
+
+2️⃣ Start Node
+```
+sudo ./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY>
+```
+
+Note: Put your `ram` , `disk` & `pubkey` with your actual Information.Retrieve the public key from your Solana wallet (e.g., Phantom, Backpack) & Replace in `<KEY>` by Solana Address
 
 ## Need to Free Your 8003 Port
 
