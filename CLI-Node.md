@@ -43,7 +43,7 @@ mkdir download_cache
 
 5️⃣ Start Node
 ```
-sudo ./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY>
+./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY>
 ```
 
 OR
