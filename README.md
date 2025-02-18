@@ -18,7 +18,7 @@ Pipe Network aims to create a hyper-localized, scalable CDN that leverages Solan
 
 ### Funding Source
 
-1️⃣ Chcek: https://cryptorank.io/ico/pipe-network#funding-rounds
+1️⃣ Check: https://cryptorank.io/ico/pipe-network#funding-rounds
 
 2️⃣ Check: https://sosovalue.com/project/pipe-network-1844240875785244674
 
