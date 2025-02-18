@@ -15,7 +15,7 @@ apt install screen -y
 
 2️⃣ Download Some Files
 ```
-curl -L -o pop "https://dl.pipecdn.app/v0.2.5/pop"
+curl -L -o pop "https://dl.pipecdn.app/v0.2.6/pop"
 ```
 ```
 chmod +x pop
