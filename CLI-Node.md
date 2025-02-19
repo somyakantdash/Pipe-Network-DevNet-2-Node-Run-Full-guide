@@ -15,7 +15,7 @@ apt install screen -y
 
 2️⃣ Download Some Files
 ```
-curl -L -o pop "https://dl.pipecdn.app/v0.2.6/pop"
+curl -L -o pop "https://dl.pipecdn.app/v0.2.8/pop"
 ```
 ```
 chmod +x pop
@@ -95,11 +95,11 @@ sudo ./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY>
 
 Note: Replace your `ram` , `disk` & `pubkey` with your actual Information.Retrieve the public key from your Solana wallet (e.g., Phantom, Backpack)
 
-## Upgrade Your Node in v0.2.6
+## Upgrade Your Node in v0.2.8
 
 1️⃣ Upgrade (Download Latest Version)
 ```
-curl -L -o pop "https://dl.pipecdn.app/v0.2.6/pop"
+curl -L -o pop "https://dl.pipecdn.app/v0.2.8/pop"
 ```
 ```
 chmod +x pop
