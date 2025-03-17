@@ -132,3 +132,11 @@ sudo fuser -k 8003/tcp
 ```
 
 Reference Video How to Free 8003 or any port - https://youtu.be/4iP4GvLfCrU?t=229
+
+### Delete DA Retriever node
+```
+cd /data
+rm -f pop  # Deletes the 'pop' binary  
+rm -rf download_cache  # Deletes the 'download_cache' folder  
+rm -f node_info.json  # Deletes the 'node_info.json' file
+```
