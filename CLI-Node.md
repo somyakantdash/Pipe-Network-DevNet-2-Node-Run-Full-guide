@@ -68,6 +68,13 @@ If Your Node showing this Above Error then Put Below Command (Must Put `ram` , `
 sudo ./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY>
 ```
 
+For VPS Only
+- PRESS CTRL+A+D (to run ur miner continuously)
+- To check ur Node Again
+```
+screen -r pipe
+```
+
 # Open Another Window for WSL or VPS
 
 ## Save the file
